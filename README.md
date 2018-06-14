@@ -11,7 +11,7 @@ PLatzom es idioma inventado para el curso de [Fundamentos de Javascript,(https:/
 
 ## Instalación
 ```
-nmp install platzom
+nmp install PCplatzom
 ```
 
 #Uso

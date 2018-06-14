@@ -1,0 +1,100 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/informatica/Escritorio/platzom',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/informatica/.npm/PCplatzom/0.1.1/package.tgz not in flight; packing
+9 info lifecycle PCplatzom@0.1.1~prepublish: PCplatzom@0.1.1
+10 silly lifecycle PCplatzom@0.1.1~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/home/informatica/.npm/PCplatzom/0.1.1/package.tgz',
+11 verbose tar pack   '/home/informatica/Escritorio/platzom' ]
+12 verbose tarball /home/informatica/.npm/PCplatzom/0.1.1/package.tgz
+13 verbose folder /home/informatica/Escritorio/platzom
+14 verbose addLocalTarball adding from inside cache /home/informatica/.npm/PCplatzom/0.1.1/package.tgz
+15 silly cache afterAdd PCplatzom@0.1.1
+16 verbose afterAdd /home/informatica/.npm/PCplatzom/0.1.1/package/package.json not in flight; writing
+17 verbose afterAdd /home/informatica/.npm/PCplatzom/0.1.1/package/package.json written
+18 silly publish { name: 'PCplatzom',
+18 silly publish   version: '0.1.1',
+18 silly publish   description: 'Traductor de idioma platzom',
+18 silly publish   main: 'dist/src/platzom.js',
+18 silly publish   scripts: { build: 'babel src/platzom.js -d dist', test: 'mocha' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/PaulinaCN1419/platzom.git' },
+18 silly publish   keywords: [ 'platzom', 'javascript', 'js' ],
+18 silly publish   author:
+18 silly publish    { name: 'Paulina Collaguazo',
+18 silly publish      email: 'paulina.nc.1419@gmail.com',
+18 silly publish      url: 'https://twitter.com/Paulina1419?lang=es' },
+18 silly publish   license: 'MIT',
+18 silly publish   bugs: { url: 'https://github.com/PaulinaCN1419/platzom/issues' },
+18 silly publish   homepage: 'https://github.com/PaulinaCN1419/platzom#readme',
+18 silly publish   devDependencies:
+18 silly publish    { 'babel-cli': '^6.26.0',
+18 silly publish      'babel-preset-env': '^1.7.0',
+18 silly publish      chai: '^4.1.2',
+18 silly publish      mocha: '^5.2.0' },
+18 silly publish   readme: '# Platzom\n\nPLatzom es idioma inventado para el curso de [Fundamentos de Javascript,(https://platzi.com/clases/fundamentos-javascript/concepto/creando-un-paquete-para-npm/creando-muestro-paquete/material/) ]  \n\n## Descripción del Idioma\n- Si la palabra termina con "ar", se le quitan esas dos letras\n- Si la palabra inicia con Z, se le añade "pe" al final\n- Si la palabra traducida tiene 10 o más letras, se debe partir en dos por la mitad y unir con un guión medio\n- Por último, si la palabra original es un palíndromo, ninguna regla anterior cuenta y se devuelve la misma palabra pero intercalando letras mayúsculas y minúsculas\n\n\n## Instalación\n```\nnmp install PCplatzom\n```\n\n#Uso\n```\nimport platzom from \'platzom\'\n\nplatzom("Programar") // Program\nplatzom("Zorro") // Zorrope\nplatzom("Zarpar") // Zarppe\nplatzom("abecedario") // abece-dario\nplatzom("sometemos") // SoMeTeMoS\n```\n## Créditos\n[Paulina Collaguazo ]  (https://twitter.com/?lang=es)\n\n##Licencia\n[MIT](https://opensource.org/licenses/MIT)',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '1347bfbaf3d5714697d3d5fa329b14e2d87278f6',
+18 silly publish   _id: 'PCplatzom@0.1.1',
+18 silly publish   _shasum: 'bd3d39775aced6c544eafe3528cec5b864564ce9',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name PCplatzom
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/PCplatzom
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /home/informatica/.npm/PCplatzom/0.1.1/package.tgz
+26 verbose request uri https://registry.npmjs.org/PCplatzom
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 10:02:24
+29 verbose request using bearer token for auth
+30 verbose request id b7f20438e730a8dc
+31 http request PUT https://registry.npmjs.org/PCplatzom
+32 http 400 https://registry.npmjs.org/PCplatzom
+33 verbose headers { date: 'Thu, 14 Jun 2018 15:02:25 GMT',
+33 verbose headers   'content-type': 'application/json',
+33 verbose headers   'content-length': '53',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'set-cookie':
+33 verbose headers    [ '__cfduid=de22216455662ed4505e049c94688f27d1528988544; expires=Fri, 14-Jun-19 15:02:24 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+33 verbose headers   'cf-ray': '42adad814cf29181-UIO',
+33 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+33 verbose headers   server: 'cloudflare' }
+34 verbose request invalidating /home/informatica/.npm/registry.npmjs.org/PCplatzom on PUT
+35 error publish Failed PUT 400
+36 verbose stack Error: "PCplatzom" is invalid for new packages : PCplatzom
+36 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:126:13)
+36 verbose stack     at Request.emit (events.js:214:7)
+36 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:121:20)
+36 verbose stack     at Request.emit (events.js:211:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 400
+38 verbose pkgid PCplatzom
+39 verbose cwd /home/informatica/Escritorio/platzom
+40 error Linux 4.15.0-23-generic
+41 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+42 error node v8.10.0
+43 error npm  v3.5.2
+44 error code E400
+45 error "PCplatzom" is invalid for new packages : PCplatzom
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
